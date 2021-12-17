@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/cssTest.css" />
+        <link rel="stylesheet" href="./assets/css/modalMusic.css" />
+
+        <title>Zing mp3</title>
+    </head>
+    <body>
+        <div id="main">
+            <header id="header">
+                <!-- Begin: Navigation -->
+                <ul id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#new">New</a></li>
+                    <!-- <li><a href="#artist">Artist</a></li> -->
+                    <li><a href="#top-music">Top songs</a></li>
+                </ul>
+                <!-- End: Navigation -->
+
+                <!-- Begin: Menu button -->
+                <div class="menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+                <!-- End: Menu button -->
+
+                <!-- Begin: Search button -->
+                <div class="search-btn">
+                    <i class="search-icon ti-search"></i>
+                </div>
+                <!-- End: Search button -->
+                <div class="list-btn">
+                    <button type="file" class="btn btn-upload-modal">
+                        <i class="ri-upload-line"></i>
+                    </button>
+                    <button class="btn btn-user">
+                        <i class="ri-user-line"></i>
+                        <ul class="subnav-user">
+                            <li class="subnav-header">
+                                <i class="ri-user-3-line"></i>
+                                <div class="user-text">
+                                    <span class="user-name"></span>
+                                    <span class="user-position"></span>
+                                </div>
+                            </li>
+                            <li class="btn-profile subnav-items">
+                                <a href="profile.html">My profile</a>
+                            </li>
+                            <li class="btn-logout subnav-items">
+                                Logout
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </header>
+            <div id="slider">
+                <div class="slider-image"></div>
+                <div class="text-content">
+                    <h2 class="text-heading">MUSIC</h2>
+                    <div class="text-decription">We love music</div>
+                </div>
+            </div>
+
+            <div id="content">
+                <!-- About section -->
+                <div id="new" class="new-song-section">
+                    <div class="section-content">
+                        <h2 class="section-heading">NEW SONG EVERY DAY</h2>
+                        <p class="section-sub-heading text-white">Discover our newest music albums and singles!</p>
+
+                        <!-- song list -->
+                        <div class="row song-new-list">
+                            <!-- <div class="col text-center s-col-full mt-32 song-new">
+                                <div class="song-new-img">
+                                    <div class="song-new-text">
+                                        <div class="song-new-name">Name</div>
+                                    </div>
+                                    <span class="badge new">NEW</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Begin: Contact section -->
+                <div id="top-music" class="top-music-content">
+                    <div class="section-content">
+                        <h2 class="section-heading text-white">TOP SONGS</h2>
+                        <p class="section-sub-heading text-white">Remember to follow our amazing songs!</p>
+                        <div class="container-play-top">
+                            <div class="content-play-top">
+                                <div class="content-disc-top">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRAIbph_gdGzZ9tOuxxzrWJYHGXFLbBXDUVz6HE2w=s176-c-k-c0x00ffffff-no-rj" alt="" />
+                                </div>
+                                <div class="content-title">
+                                    <div class="top-name"></div>
+                                    <div class="top-performer"></div>
+                                </div>
+                                <div class="content-music-action">
+                                    <button class="btn btn-content-toggle">
+                                        <div class="btn-content-play">
+                                            <i class="ri-play-fill"></i>
+                                            <span>PHÁT</span>
+                                        </div>
+                                        <div class="btn-content-pause">
+                                            <i class="ri-pause-fill"></i>
+                                            <span>TẠM DỪNG</span>
+                                        </div>
+                                    </button>
+                                    <div class="btn-round">
+                                        <button class="btn btn-library">
+                                            <i class="ri-heart-line"></i>
+                                        </button>
+                                        <button class="btn btn-option">
+                                            <i class="ri-more-line"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-list-top">
+                                <div class="playlist-header-top-text">
+                                    <div class="playlist-header-top">
+                                        <span>BÀI HÁT</span>
+                                    </div>
+                                    <div class="playlist-header-time-top">
+                                        <span>THỜI GIAN</span>
+                                    </div>
+                                    <div class="playlist-header-option-top">
+                                        <div class="playlist-sorter">
+                                            MẶC ĐỊNH
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="playlist-top">
+                                    <div class="container-playlist-top" data-index="1">
+                                        <div class="content-playlist-top">
+                                            <div class="top-prefix">
+                                                <span class="top-number">1</span>
+                                            </div>
+                                            <div class="top-thumb">
+                                                <div
+                                                    class="top-image"
+                                                    style="background-image: url('https://yt3.ggpht.com/ytc/AKedOLRAIbph_gdGzZ9tOuxxzrWJYHGXFLbBXDUVz6HE2w=s176-c-k-c0x00ffffff-no-rj')"
+                                                ></div>
+                                                <div class="top-thumb-active"></div>
+                                            </div>
+                                            <div class="top-title">
+                                                <span class="top-name"> Hello </span>
+                                                <span class="top-performer"> Hello </span>
+                                            </div>
+                                        </div>
+                                        <div class="content-playlist-time-top">
+                                            <span></span>
+                                        </div>
+                                        <div class="content-playlist-option-top"></div>
+                                    </div>
+                                </div>
+                                <div class="btn-step">
+                                    <button class="btn btn-left">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                    </button>
+                                    <button class="btn btn-right">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Contact section -->
+
+                <div id="footer">
+                    <div class="social-list">
+                        <a href=""><i class="ri-google-fill"></i></a>
+                    </div>
+                    <p class="copyright">Powered by <a href="">19110297 - 19110302</a></p>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div id="controls">
+                <div class="controls-left">
+                    <figure class="controls-disc round">
+                        <img src="" alt="">
+                    </figure>
+                    <div class="song-title">
+                        <span class="song-name">
+                        </span>
+                        <span class="song-performer">
+                        </span>
+                    </div>
+                    <button class="btn btn-library">
+                        <i class="ri-heart-line"></i>
+                    </button>
+                    <button class="btn btn-option">
+                        <i class="ri-more-line"></i>
+                    </button>
+                </div>
+                <div class="controls-center">
+                    <div class="controls-btn">
+                        <button class="btn btn-shuffle">
+                            <i class="ri-shuffle-line"></i>
+                        </button>
+                        <button class="btn btn-skip-back">
+                            <i class="ri-skip-back-line"></i>
+                        </button>
+                        <button class="btn btn-toggle-play">
+                            <i class="ri-pause-circle-line icon-pause"></i>
+                            <i class="ri-play-circle-line icon-play"></i>
+                        </button>
+                        <button class="btn btn-skip-forward">
+                            <i class="ri-skip-forward-line"></i>
+                        </button>
+                        <button class="btn btn-repeat">
+                            <i class="ri-repeat-one-line"></i>
+                        </button>
+                    </div>
+                    <div class="controls-time-song">
+                        <span class="time-left">00:00</span>
+                        <input type="range" id="progress" value="0" step="1" min="0" max="100"></input>
+                        <span class="time-right">00:00</span>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <button class="btn btn-mv">
+                        <i class="ri-mv-line"></i>
+                    </button>
+                    <button class="btn btn-lyric">
+                        <i class="ri-mic-line"></i>
+                    </button>
+                    <button class="btn btn-restore">
+                        <i class="ri-picture-in-picture-line"></i>
+                    </button>
+                    <button class="btn btn-volume">
+                        <i class="ri-volume-up-line"></i>
+                    </button>
+                    <div class="divide">
+                        <span></span>
+                    </div>
+                    <button class="btn btn-playlist">
+                        <i class="ri-play-list-line"></i>
+                    </button>
+                </div>
+            </div>
+             <!-- Container music play -->
+            <div id="container-music">
+                <div class="content">
+                    <div class="btn-round">
+                        <button class="btn btn-down">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                    </div>
+                    <div class="content-music">
+                        <div class="content-disc">
+                            <img src="" alt="">
+                        </div>
+                        <div class="content-music-heading">
+                            <div class="content-title">
+                                <div class="song-name">
+                                </div>
+                                <div class="song-performer">
+                                </div>
+                            </div>
+                            <div class="content-music-action">
+                                <button class="btn btn-content-toggle">
+                                <div class="btn-content-play">
+                                    <i class="ri-play-fill"></i>
+                                    <span>PHÁT</span>
+                                </div>
+                                <div class="btn-content-pause">
+                                    <i class="ri-pause-fill"></i>
+                                    <span>TẠM DỪNG</span>
+                                </div>
+                            </button>
+                                <div class="btn-round">
+                                    <button class="btn btn-library">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                                    <button class="btn btn-option">
+                                    <i class="ri-more-line"></i>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-list-song">
+                        <div class="playlist-header">
+                            <div class="playlist-header-song">
+                                <span>BÀI HÁT</span>
+                            </div>
+                            <div class="playlist-header-time-song">
+                                <span>THỜI GIAN</span>
+                            </div>
+                            <div class="playlist-header-option-song">
+                                <div class="playlist-sorter">
+                                    MẶC ĐỊNH
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <header class="modal-header">
+                    UPLOAD SONG <i class="ri-disc-line"></i>
+                </header>
+                <form method="POST" enctype="multipart/form-data" id='upload-music' class="modal-body">
+                    <label for="modal-name-music" class="modal-label">
+                        <i class="ri-music-2-fill"></i>
+                        Name Song
+                    </label>
+                    <input id="modal-name-music" type="text" name="name-music" class="modal-input" placeholder="Enter Name Song">
+                    <label for="modal-singer" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        Singer
+                    </label>
+                    <input id="modal-singer" type="text" name="name-singer" class="modal-input" placeholder="Enter Singer Name">
+                    <label for="modal-decription" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        File image
+                    </label>
+                    <input type="file" id="image" name="image" class="modal-input" multiple>
+                   <label for="modal-decription" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        File mp3
+                    </label>
+                    <input type="file" id="mp3" name="mp3" class="modal-input" accept="audio/mp3,audio/*;capture=microphone" multiple>
+                    <button id="modal-btn" class="btn-upload">Upload<i class="ti-check"></i></button>
+                </form>
+                
+                <footer class="modal-footer">
+                </footer>
+            </div>
+        </div>
+       
+        <audio id="audio" src=""></audio>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <img src="https://preview.redd.it/a93mgrspthe51.jpg?width=960&crop=smart&auto=webp&s=66da536c08191eeb27daec85c757bc235d669408" alt="Background" class="img-background" />
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"; 
+            const firebaseConfig = { 
+                apiKey: "AIzaSyDfzLDDrZBAAJqvLwUhGvQkLxpLuRVA5gU", 
+                authDomain: "music-656c2.firebaseapp.com", 
+                databaseURL: "https://music-656c2-default-rtdb.firebaseio.com",
+                projectId: "music-656c2", 
+                storageBucket: "music-656c2.appspot.com", 
+                messagingSenderId: "66428751827", 
+                appId: "1:66428751827:web:ef9453bcefe71298046926", 
+                measurementId: "G-32WH3PMPLM" 
+            }; 
+            const app = initializeApp(firebaseConfig);
+        </script>
+        <script type="module" src="./assets/script/main.js"></script>
+        <script type="module" src="./assets/script/home.js"></script>
+        <script type="module" src="./assets/script/handleModal.js"></script>
+        <script type="module" src="./assets/script/uploadFile.js"></script>
+    </body>
+</html>

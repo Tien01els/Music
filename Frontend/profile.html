@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="./assets/css/profile.css" />
+        <link rel="stylesheet" href="./assets/css/cssTest.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <title>Profile Students</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <header id="header">
+                <!-- Begin: Navigation -->
+                <ul id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#new">New</a></li>
+                    <!-- <li><a href="#artist">Artist</a></li> -->
+                    <li><a href="#top-music">Top songs</a></li>
+                </ul>
+                <!-- End: Navigation -->
+
+                <!-- Begin: Menu button -->
+                <div class="menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+                <!-- End: Menu button -->
+
+                <!-- Begin: Search button -->
+                <div class="search-btn">
+                    <i class="search-icon ti-search"></i>
+                </div>
+                <!-- End: Search button -->
+                <div class="list-btn">
+                    <button type="file" class="btn btn-upload-modal">
+                        <i class="ri-upload-line"></i>
+                    </button>
+                    <button class="btn btn-user">
+                        <i class="ri-user-line"></i>
+                        <ul class="subnav-user">
+                            <li class="subnav-header">
+                                <i class="ri-user-3-line"></i>
+                                <div class="user-text">
+                                    <span class="user-name"></span>
+                                    <span class="user-position"></span>
+                                </div>
+                            </li>
+                            <li class="btn-profile subnav-items">
+                                <a href="profile.html">My profile</a>
+                            </li>
+                            <li class="btn-logout subnav-items">Logout</li>
+                        </ul>
+                    </button>
+                </div>
+            </header>
+
+            <div id="content">
+                <div class="page-header">
+                    <div class="col">
+                        <h3 class="page-title">Profile Student</h3>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-items">Students/</li>
+                            <li class="breadcrumb-items">Profile Student</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <div class="profile-user-img">
+                            <div class="user-img-student"></div>
+                        </div>
+                        <div class="profile-user-info">
+                            <span class="fullname"></span>
+                            <div class="profile-contact-info">
+                                <span>
+                                    Phone number:
+                                    <span class="phone"> </span>
+                                </span>
+                                <p></p>
+                                <span>
+                                    Email:
+                                    <span class="email"> </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="profile-user-btn">
+                            <a href="EditProfileStudent.html" class="btn btn-edit">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-body">
+                    <h3 class="form-title">Personal Details</h3>
+                    <div class="profile-info">
+                        <span class="profile-info-key"> Name </span>
+                        <span class="fullname profile-info-value"> </span>
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-info-key"> Gender </span>
+                        <span class="gender profile-info-value"> </span>
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-info-key"> Date of Birth </span>
+                        <span class="birth profile-info-value"> </span>
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-info-key"> Phone number </span>
+                        <span class="phone profile-info-value"> </span>
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-info-key"> Email </span>
+                        <span class="email profile-info-value"> </span>
+                    </div>
+                </div>
+                <div class="page-body">
+                    <form action="" class="row">
+                        <h3 class="form-title">Login Details</h3>
+                        <input type="hidden" name="" value="account" />
+
+                        <div class="col form-group">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" name="username" class="form-input" />
+                        </div>
+
+                        <div class="col-half form-group">
+                            <label for="" class="form-label">Old Password</label>
+                            <input type="password" name="" class="form-input" />
+                        </div>
+                        <div class="col-half form-group">
+                            <label for="" class="form-label">New Password</label>
+                            <input type="password" name="" class="form-input" />
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                            <button type="reset" class="btn btn-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer id="footer"></footer>
+        </div>
+
+        <script type="module" src="./assets/scripts/home.js"></script>
+    </body>
+</html>

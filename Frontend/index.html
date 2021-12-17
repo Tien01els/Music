@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Zing mp3</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <audio id="audio" src=""></audio>
+        <div id="sidebar">
+            <div class="home">
+                <a class="btn-home">
+                    <img class="btn-home-img" src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.8/static/media/icon_zing_mp3_60.f6b51045.svg" alt="Zing MP3 Logo">
+                </a>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-list">
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-file-user-line"></i>
+                            <span>Cá Nhân</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-disc-line"></i>
+                            <span>Khám phá</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-pie-chart-line"></i>
+                            <span>#zingchart</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-radio-fill"></i>
+                            <span>Radio</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-article-line"></i>
+                            <span>Theo dõi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-type">
+                <ul class="sidebar-type-list">
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-music-2-line"></i>
+                            <span>Nhạc mới</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-tape-line"></i>
+                            <span>Thể loại</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-vip-crown-line"></i>
+                            <span>Top Music</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-mv-line"></i>
+                            <span>MV</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-library-list">
+                    <h2>Thư viện</h2>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-folder-music-line"></i>
+                            <span>Bài hát</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-play-list-line"></i>
+                            <span>Playlist</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link-item">
+                            <i class="sidebar-icon ri-time-line"></i>
+                            <span>Gần đây</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="add-playlist-sidebar">
+                <a href="" class="btn-add-playlist-sidebar">
+                    <i class="sidebar-icon ri-add-line"></i>
+                    <span>Tạo playlist mới</span>
+                </a>
+            </div>
+        </div>
+        <header id="header">
+            <div class="level">
+                <div class="level-left">
+                    <button class="btn btn-back">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="btn btn-forward">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <form action="" class="form-search">
+                        <div class="search-container">
+                            <button class="btn btn-search">
+                                <i class="ri-search-line"></i>
+                            </button>
+                            <input type="text" class="search-input" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                        </div>
+                    </form>
+                </div>
+                <div class="level-right">
+                    <button class="btn btn-theme">
+                        <i class="ri-t-shirt-line"></i>
+                    </button>
+                    <button type="file" class="btn btn-upload-modal">
+                        <i class="ri-upload-line"></i>
+                    </button>
+                    <button class="btn btn-setting">
+                        <i class="ri-settings-5-fill"></i>
+                    </button>
+                    <button class="btn btn-user">
+                        <i class="ri-user-line"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div id="container">
+            <div class="content">
+                <div class="content-music">
+                    <div class="content-disc">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content-music-heading">
+                        <div class="content-title">
+                            <div class="song-name">
+                            </div>
+                            <div class="song-performer">
+                            </div>
+                        </div>
+                        <div class="content-music-action">
+                            <button class="btn btn-content-toggle">
+                            <div class="btn-content-play">
+                                <i class="ri-play-fill"></i>
+                                <span>PHÁT</span>
+                            </div>
+                            <div class="btn-content-pause">
+                                <i class="ri-pause-fill"></i>
+                                <span>TẠM DỪNG</span>
+                            </div>
+                        </button>
+                            <div class="btn-round">
+                                <button class="btn btn-library">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                                <button class="btn btn-option">
+                                <i class="ri-more-line"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list-song">
+                    <div class="playlist-header">
+                        <div class="playlist-header-song">
+                            <span>BÀI HÁT</span>
+                        </div>
+                        <div class="playlist-header-time-song">
+                            <span>THỜI GIAN</span>
+                        </div>
+                        <div class="playlist-header-option-song">
+                            <div class="playlist-sorter">
+                                MẶC ĐỊNH
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist"></div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <div class="controls-left">
+                <figure class="controls-disc round">
+                    <img src="" alt="">
+                </figure>
+                <div class="song-title">
+                    <span class="song-name">
+                    </span>
+                    <span class="song-performer">
+                    </span>
+                </div>
+                <button class="btn btn-library">
+                    <i class="ri-heart-line"></i>
+                </button>
+                <button class="btn btn-option">
+                    <i class="ri-more-line"></i>
+                </button>
+            </div>
+            <div class="controls-center">
+                <div class="controls-btn">
+                    <button class="btn btn-shuffle">
+                        <i class="ri-shuffle-line"></i>
+                    </button>
+                    <button class="btn btn-skip-back">
+                        <i class="ri-skip-back-line"></i>
+                    </button>
+                    <button class="btn btn-toggle-play">
+                        <i class="ri-pause-circle-line icon-pause"></i>
+                        <i class="ri-play-circle-line icon-play"></i>
+                    </button>
+                    <button class="btn btn-skip-forward">
+                        <i class="ri-skip-forward-line"></i>
+                    </button>
+                    <button class="btn btn-repeat">
+                        <i class="ri-repeat-one-line"></i>
+                    </button>
+                </div>
+                <div class="controls-time-song">
+                    <span class="time-left">00:00</span>
+                    <input type="range" id="progress" value="0" step="1" min="0" max="100"></input>
+                    <span class="time-right">00:00</span>
+                </div>
+            </div>
+            <div class="controls-right">
+                <button class="btn btn-mv">
+                    <i class="ri-mv-line"></i>
+                </button>
+                <button class="btn btn-lyric">
+                    <i class="ri-mic-line"></i>
+                </button>
+                <button class="btn btn-restore">
+                    <i class="ri-picture-in-picture-line"></i>
+                </button>
+                <button class="btn btn-volume">
+                    <i class="ri-volume-up-line"></i>
+                </button>
+                <div class="divide">
+                    <span></span>
+                </div>
+                <button class="btn btn-playlist">
+                    <i class="ri-play-list-line"></i>
+                </button>
+            </div>
+        </div>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <header class="modal-header">
+                    UPLOAD SONG <i class="ri-disc-line"></i>
+                </header>
+                <form method="POST" enctype="multipart/form-data" id='upload-music' class="modal-body">
+                    <label for="modal-name-music" class="modal-label">
+                        <i class="ri-music-2-fill"></i>
+                        Name Song
+                    </label>
+                    <input id="modal-name-music" type="text" name="name-music" class="modal-input" placeholder="Enter Name Song">
+                    <label for="modal-singer" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        Singer
+                    </label>
+                    <input id="modal-singer" type="text" name="name-singer" class="modal-input" placeholder="Enter Singer Name">
+                    <label for="modal-decription" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        Decription
+                    </label>
+                    <textarea id="modal-decription" name="decription" class="modal-input" placeholder="Enter Decription"></textarea>
+                    <label for="modal-decription" class="modal-label">
+                        <i class="ri-user-6-fill"></i>
+                        File mp3
+                    </label>
+                    <input type="file" id="link" name="link" class="modal-input" accept="audio/mp3,audio/*;capture=microphone" multiple>
+                    <button id="modal-btn" class="btn-upload">Upload<i class="ti-check"></i></button>
+                </form>
+                <footer class="modal-footer">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"; 
+        const firebaseConfig = { 
+            apiKey: "AIzaSyDfzLDDrZBAAJqvLwUhGvQkLxpLuRVA5gU", 
+            authDomain: "music-656c2.firebaseapp.com", 
+            databaseURL: "https://music-656c2-default-rtdb.firebaseio.com",
+            projectId: "music-656c2", 
+            storageBucket: "music-656c2.appspot.com", 
+            messagingSenderId: "66428751827", 
+            appId: "1:66428751827:web:ef9453bcefe71298046926", 
+            measurementId: "G-32WH3PMPLM" 
+        }; 
+        const app = initializeApp(firebaseConfig);
+    </script>
+    <script>
+        const reader = new FileReader();
+    </script>
+    <script type="module" src="./assets/script/main.js"></script>
+    <script type="module" src="./assets/script/uploadFile.js"></script>
+</body>
+
+</html>

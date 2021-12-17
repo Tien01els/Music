@@ -1,0 +1,83 @@
+.profile-header {
+    height: 170px;
+    padding: 24px;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.profile-info {
+    display: flex;
+}
+
+.profile-user-img {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.user-img-student {
+    height: 120px;
+    width: 120px;
+    background-image: url("https://icon-library.com/images/student-icon/student-icon-10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user-img {
+    height: 120px;
+    width: 120px;
+    background-image: url("https://img.favpng.com/12/15/21/computer-icons-avatar-user-profile-recommender-system-png-favpng-HaMDUPFH1etkLCdiFjgTKHzAs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.profile-user-info span {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.profile-user-info .fullname {
+    font-size: 2.4rem;
+}
+
+.profile-body {
+    height: 200px;
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+}
+
+.profile-body .profile-info {
+    display: flex;
+    margin: 12px 20px;
+}
+
+.profile-body .profile-info .profile-info-key {
+    width: 160px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

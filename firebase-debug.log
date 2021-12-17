@@ -1,0 +1,21 @@
+[debug] [2021-12-15T18:33:24.913Z] ----------------------------------------------------------------------
+[debug] [2021-12-15T18:33:24.925Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tien\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-12-15T18:33:24.928Z] CLI Version:   9.23.1
+[debug] [2021-12-15T18:33:24.928Z] Platform:      win32
+[debug] [2021-12-15T18:33:24.928Z] Node Version:  v14.18.1
+[debug] [2021-12-15T18:33:24.946Z] Time:          Thu Dec 16 2021 01:33:24 GMT+0700 (Indochina Time)
+[debug] [2021-12-15T18:33:24.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-15T18:33:24.973Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-15T18:33:24.974Z] > authorizing via signed-in user (tien140801@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\HK1_2021\ZingMP3
+

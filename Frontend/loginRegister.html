@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/login.css" />
+        <title>Login Register</title>
+    </head>
+
+    <body>
+        <div class="login-register">
+            <div class="login-register-container">
+                <div class="heading">
+                    <div class="login active">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="register">
+                        <h1>Register</h1>
+                    </div>
+                </div>
+                <div class="login-container active">
+                    <form action="" class="form-login mt-32">
+                        <div class="form-group mt-16">
+                            <div class="form-content-input">
+                                <i class="icon ri-user-3-line"></i>
+                                <input type="text" id="username-login" class="form-input" required />
+                                <label for="username-login" class="form-label">Username</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group mt-24">
+                            <div class="form-content-input">
+                                <i class="icon ri-lock-2-line"></i>
+                                <input type="password" id="password-login" class="form-input" required />
+                                <label for="password-login" class="form-label">Password</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group mt-32">
+                            <input type="checkbox" name="remember-me" id="remember-me" class="form-checkbox" />
+                            <label for="remember-me" class="form-label text-remember">Remember Me</label>
+                        </div>
+                        <div class="form-group btn btn-login mt-40">
+                            <div class="inner"></div>
+                            <input type="submit" value="LOGIN" class="form-btn" />
+                        </div>
+                    </form>
+                    <div class="center mt-32">
+                        <hr />
+                        <span> Or Sign In Using </span>
+                        <hr />
+                    </div>
+                    <div class="icon-group mt-16">
+                        <a href=""><i class="icon icon-facebook ri-facebook-circle-fill"></i></a>
+                        <a href="http://localhost:5000/auth/google"><i class="icon icon-google ri-google-fill"></i></a>
+                        <a href=""><i class="icon icon-twitter ri-twitter-fill"></i></a>
+                    </div>
+                    <!-- <div class="forgot-password-content">
+                        <a href="" class="forgot-password mt-16">Forgot password?</a>
+                    </div> -->
+                </div>
+                <div class="register-container">
+                    <form action="" class="form-register mt-32">
+                        <div class="form-group mt-12">
+                            <div class="form-content-input">
+                                <i class="icon ri-user-3-line"></i>
+                                <input type="text" id="username-register" class="form-input" required />
+                                <label for="username-register" class="form-label">Username</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group mt-24">
+                            <div class="form-content-input">
+                                <i class="icon ri-mail-line"></i>
+                                <input type="text" id="email-register" class="form-input" required />
+                                <label for="email-register" class="form-label">Email</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group mt-24">
+                            <div class="form-content-input">
+                                <i class="icon ri-lock-2-line"></i>
+                                <input type="password" id="password-register" class="form-input" required />
+                                <label for="password-register" class="form-label">Password</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group mt-24">
+                            <div class="form-content-input">
+                                <i class="icon ri-rotate-lock-line"></i>
+                                <input type="password" id="confirm-password" class="form-input" required />
+                                <label for="confirm-password" class="form-label">Confirm password</label>
+                                <br />
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group btn btn-register mt-40">
+                            <div class="inner"></div>
+                            <input type="submit" value="REGISTER" class="form-btn" />
+                        </div>
+                    </form>
+                    <div class="center mt-32">
+                        <hr />
+                        <span> Or Sign Up Using </span>
+                        <hr />
+                    </div>
+                    <div class="icon-group mt-16">
+                        <a href=""><i class="icon icon-facebook ri-facebook-circle-fill"></i></a>
+                        <a href="http://localhost:5000/auth/google"><i class="icon icon-google ri-google-fill"></i></a>
+                        <a href=""><i class="icon icon-twitter ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./assets/script/login_register.js" type="text/javascript"></script>
+    </body>
+</html>
